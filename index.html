@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="google-site-verification" content="H6rn2_DP94DyI5mzvX2saVl_NviuZHomvyaIR16_N1U" />
+  <title>BrotherFit | Fitness India</title>
+
+<!-- SEO META TAGS -->
+<meta name="description"
+content="BrotherFit is a fitness and gym website by Prajwal Chavhan. Get expert workout guidance, exercise videos, training programs, and fitness motivation to transform your body and lifestyle." />
+
+<meta name="keywords"
+content="BrotherFit, gym website, fitness expert India, workout exercises, gym training, muscle gain, weight loss, home workouts, fitness influencer, Prajwal Chavhan" />
+
+<meta name="author" content="Prajwal Chavhan" />
+
+<!-- OPEN GRAPH / SOCIAL MEDIA SEO -->
+<meta property="og:title" content="BrotherFit | Transform Your Body, Transform Your Life" />
+<meta property="og:site_name" content="BrotherFit Fitness Club" />
+<meta property="og:description" content="Join BrotherFit by Prajwal Chavhan for expert workouts, exercise videos, fitness programs, and real motivation to build your perfect body." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://prajwalchavhan22.github.io/fitnessclub-/" />
+<meta property="og:image" content="https://prajwalchavhan22.github.io/fitnessclub-/images/og-image.jpg" />
+
+
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandPurple: '#6a5acd'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Filter Button Style -->
+  <style>
+    .filter-btn {
+      border: 1px solid #6a5acd;
+      color: #6a5acd;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .filter-btn:hover {
+      background-color: #6a5acd;
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-white text-gray-900 scroll-smooth">
+
+<!-- ================= NAVBAR ================= -->
+<header class="sticky top-0 z-50 bg-white border-b">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-brandPurple">
+      Brother<span class="text-black">Fit</span>
+    </h1>
+
+    <nav class="hidden md:flex space-x-8 font-semibold">
+  <a href="#home" class="hover:text-brandPurple">Home</a>
+  <a href="#about" class="hover:text-brandPurple">About</a>
+  <a href="#trainer" class="hover:text-brandPurple">Trainer</a>
+  <a href="#programs" class="hover:text-brandPurple">Programs</a>
+  <a href="#pricing" class="hover:text-brandPurple">Pricing</a>
+  <a href="#exercises" class="hover:text-brandPurple">Exercises</a>
+  <a href="#testimonials" class="hover:text-brandPurple">Testimonials</a>
+  <a href="#gallery" class="hover:text-brandPurple">Gallery</a>
+  <a href="#contact" class="hover:text-brandPurple">Contact</a>
+</nav>
+
+
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+  <a href="#home" class="block px-4 py-3">Home</a>
+  <a href="#about" class="block px-4 py-3">About</a>
+  <a href="#trainer" class="block px-4 py-3">Trainer</a>
+  <a href="#programs" class="block px-4 py-3">Programs</a>
+  <a href="#pricing" class="block px-4 py-3">Pricing</a>
+  <a href="#exercises" class="block px-4 py-3">Exercises</a>
+  <a href="#testimonials" class="block px-4 py-3">Testimonials</a>
+  <a href="#gallery" class="block px-4 py-3">Gallery</a>
+  <a href="#contact" class="block px-4 py-3">Contact</a>
+</div>
+
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="scroll-mt-24 bg-brandPurple text-white text-center py-28 px-4">
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">
+    Transform Your Body, Transform Your Life
+  </h2>
+  <p class="max-w-xl mx-auto mb-8">
+    Smart workouts • Proper guidance • Indian fitness approach
+  </p>
+  <a href="#pricing"
+     class="inline-block bg-white text-brandPurple px-8 py-3 rounded-lg font-semibold">
+    Get Started
+  </a>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="scroll-mt-24 py-20 px-4">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-brandPurple mb-6">About BrotherFit</h2>
+    <p class="text-gray-700 mb-10">
+      BrotherFit is built to motivate people to build strong, confident,
+      and healthy bodies through discipline, consistency, and smart training.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-6 bg-gray-50 rounded-xl shadow">
+        <h3 class="font-bold text-brandPurple mb-2">Mission</h3>
+        <p class="text-sm text-gray-600">Transform body & mindset.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-xl shadow">
+        <h3 class="font-bold text-brandPurple mb-2">Vision</h3>
+        <p class="text-sm text-gray-600">Build a disciplined generation.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-xl shadow">
+        <h3 class="font-bold text-brandPurple mb-2">Why Choose Us?</h3>
+        <p class="text-sm text-gray-600">Real guidance, real results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAINER ================= -->
+<section id="trainer" class="scroll-mt-24 py-20 px-4 bg-gray-100">
+  <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 text-center">
+    <div class="relative w-44 h-44 mx-auto mb-6">
+      <div class="absolute inset-0 rounded-full border-4 border-brandPurple animate-pulse"></div>
+      <img src="images/trainer.jpg" class="w-40 h-40 rounded-full mx-auto object-cover relative z-10">
+    </div>
+
+    <h3 class="text-2xl font-bold text-brandPurple">Prajwal Chavhan</h3>
+    <p class="text-gray-600 mb-3">
+      Fitness Expert • Fitness Influencer • Fitness Model
+    </p>
+
+    <p class="max-w-2xl mx-auto text-gray-700 mb-6">
+      I motivate people to transform their body, confidence, and lifestyle
+      through consistency, discipline, and the right mindset.
+    </p>
+
+    <div class="flex justify-center space-x-6 text-brandPurple text-xl">
+
+  <!-- Instagram -->
+  <a href="https://instagram.com/pra_wal26" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram hover:text-pink-600 transition"></i>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://youtube.com/@8bitkaiser_moto" target="_blank" aria-label="YouTube">
+    <i class="fab fa-youtube hover:text-red-600 transition"></i>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://facebook.com/prajwal.chavhan.180" target="_blank" aria-label="Facebook">
+    <i class="fab fa-facebook hover:text-blue-600 transition"></i>
+  </a>
+
+</div>
+
+    <!--CTA BUTTONS -->
+  </div>
+  <div class="mt-6 flex justify-center gap-4 flex-wrap">
+  <a href="https://wa.me/8010265880"
+     target="_blank"
+     class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold">
+    Join on WhatsApp
+  </a>
+
+  <a href="#contact"
+     class="bg-brandPurple text-white px-6 py-3 rounded-lg font-semibold">
+    Book Free Trial
+  </a>
+</div>
+</section>
+
+<!-- ================= PROGRAMS ================= -->
+<section id="programs" class="scroll-mt-24 py-20 px-4">
+  <h2 class="text-3xl font-bold text-center text-brandPurple mb-12">
+    Programs & Services
+  </h2>
+
+  <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+      <h3 class="font-bold text-brandPurple">Weight Loss</h3>
+      <p class="text-sm text-gray-600">Beginner • 8–12 Weeks</p>
+    </div>
+    <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+      <h3 class="font-bold text-brandPurple">Muscle Gain</h3>
+      <p class="text-sm text-gray-600">Intermediate • 12 Weeks</p>
+    </div>
+    <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+      <h3 class="font-bold text-brandPurple">Cardio Training</h3>
+      <p class="text-sm text-gray-600">All Levels</p>
+    </div>
+    <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+      <h3 class="font-bold text-brandPurple">Personal Training</h3>
+      <p class="text-sm text-gray-600">Custom Plans</p>
+    </div>
+  </div>
+</section>
+<!-- ================= PRICING ================= -->
+<section id="pricing" class="scroll-mt-24 py-20 px-4 bg-gray-100">
+  <h2 class="text-3xl font-bold text-center text-brandPurple mb-4">
+    Membership Plans
+  </h2>
+  <p class="text-center text-gray-600 mb-12">
+    Choose a plan that fits your fitness goals
+  </p>
+
+  <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <div class="bg-white p-8 rounded-2xl shadow text-center">
+      <h3 class="text-xl font-bold text-brandPurple mb-2">Basic</h3>
+      <p class="text-4xl font-bold mb-6">₹999<span class="text-base">/month</span></p>
+      <ul class="text-gray-600 space-y-2 mb-6">
+        <li>✔ Gym Access</li>
+        <li>✔ Cardio</li>
+        <li>✔ Beginner Guidance</li>
+      </ul>
+      <a href="#contact" class="bg-brandPurple text-white px-6 py-3 rounded-lg font-semibold inline-block">
+        Join Now
+      </a>
+    </div>
+
+    <div class="bg-white p-8 rounded-2xl shadow-xl border-2 border-brandPurple text-center scale-105">
+      <h3 class="text-xl font-bold text-brandPurple mb-2">Standard</h3>
+      <p class="text-4xl font-bold mb-6">₹2,499<span class="text-base">/3 months</span></p>
+      <ul class="text-gray-600 space-y-2 mb-6">
+        <li>✔ Gym + Cardio</li>
+        <li>✔ Muscle Gain</li>
+        <li>✔ Diet Guidance</li>
+      </ul>
+      <a href="#contact" class="bg-brandPurple text-white px-6 py-3 rounded-lg font-semibold inline-block">
+        Most Popular
+      </a>
+    </div>
+
+    <div class="bg-white p-8 rounded-2xl shadow text-center">
+      <h3 class="text-xl font-bold text-brandPurple mb-2">Premium</h3>
+      <p class="text-4xl font-bold mb-6">₹7,999<span class="text-base">/year</span></p>
+      <ul class="text-gray-600 space-y-2 mb-6">
+        <li>✔ Personal Training</li>
+        <li>✔ Custom Diet</li>
+        <li>✔ Full Support</li>
+      </ul>
+      <a href="#contact" class="bg-brandPurple text-white px-6 py-3 rounded-lg font-semibold inline-block">
+        Join Premium
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= EXERCISES ================= -->
+<section id="exercises" class="scroll-mt-24 bg-gray-100 py-20 px-4">
+  <h2 class="text-3xl font-bold text-center text-brandPurple mb-6">
+    Exercise Library
+  </h2>
+
+  <p class="text-center text-gray-600 mb-10">
+    Watch correct form & posture before performing exercises
+  </p>
+
+  <!-- FILTER BUTTONS -->
+  <div class="flex flex-wrap justify-center gap-3 mb-12">
+    <button onclick="filterExercises('all')" class="bg-brandPurple text-white px-4 py-2 rounded-full font-semibold">All</button>
+    <button onclick="filterExercises('chest')" class="filter-btn">Chest</button>
+    <button onclick="filterExercises('legs')" class="filter-btn">Legs</button>
+    <button onclick="filterExercises('back')" class="filter-btn">Back</button>
+    <button onclick="filterExercises('arms')" class="filter-btn">Arms</button>
+    <button onclick="filterExercises('abs')" class="filter-btn">Abs</button>
+    <button onclick="filterExercises('forearms')" class="filter-btn">Forearms</button>
+    <button onclick="filterExercises('shoulders')" class="filter-btn">Shoulders</button>
+  </div>
+
+  <!-- EXERCISE GRID -->
+  <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- CHEST -->
+    <div class="exercise-card bg-white p-5 rounded-xl shadow" data-category="chest arms">
+      <h3 class="text-brandPurple font-semibold mb-2">Chest Workout (Push Ups)</h3>
+      <p class="text-sm text-gray-500 mb-3">Chest • Triceps</p>
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe class="w-full h-full"
+          src="https://www.youtube.com/embed/Ea4Zbb9_f7w?rel=0"
+          title="Chest Workout" allowfullscreen></iframe>
+      </div>
+      <p class="text-sm text-gray-600 mt-3">Reps: 12–15 • Sets: 3</p>
+    </div>
+
+    <!-- LEGS -->
+    <div class="exercise-card bg-white p-5 rounded-xl shadow" data-category="legs">
+      <h3 class="text-brandPurple font-semibold mb-2">Legs Workout</h3>
+      <p class="text-sm text-gray-500 mb-3">Quads • Glutes</p>
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe class="w-full h-full"
+          src="https://www.youtube.com/embed/yjtu1t1XSSU?rel=0"
+          title="Legs Workout" allowfullscreen></iframe>
+      </div>
+      <p class="text-sm text-gray-600 mt-3">Reps: 15 • Sets: 3</p>
+    </div>
+
+    <!-- BACK -->
+    <div class="exercise-card bg-white p-5 rounded-xl shadow" data-category="back arms">
+      <h3 class="text-brandPurple font-semibold mb-2">Back Workout</h3>
+      <p class="text-sm text-gray-500 mb-3">Back • Biceps</p>
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe class="w-full h-full"
+          src="https://www.youtube.com/embed/eyiuqORHlG0?rel=0"
+          title="Back Workout" allowfullscreen></iframe>
+      </div>
+      <p class="text-sm text-gray-600 mt-3">Reps: 8–10 • Sets: 3</p>
+    </div>
+
+    <!-- ABS -->
+    <div class="exercise-card bg-white p-5 rounded-xl shadow" data-category="abs">
+      <h3 class="text-brandPurple font-semibold mb-2">Abs Workout</h3>
+      <p class="text-sm text-gray-500 mb-3">Core • Abs</p>
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe class="w-full h-full"
+          src="https://www.youtube.com/embed/blakb412cfk?rel=0"
+          title="Abs Workout" allowfullscreen></iframe>
+      </div>
+      <p class="text-sm text-gray-600 mt-3">30–45 sec • 3 sets</p>
+    </div>
+
+    <!-- ARMS -->
+    <div class="exercise-card bg-white p-5 rounded-xl shadow" data-category="arms">
+      <h3 class="text-brandPurple font-semibold mb-2">Arms Workout</h3>
+      <p class="text-sm text-gray-500 mb-3">Biceps • Triceps</p>
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe class="w-full h-full"
+          src="https://www.youtube.com/embed/w5y4KKLiWMY?rel=0"
+          title="Arms Workout" allowfullscreen></iframe>
+      </div>
+      <p class="text-sm text-gray-600 mt-3">10–12 reps • 3 sets</p>
+    </div>
+
+    <!-- FOREARMS -->
+    <div class="exercise-card bg-white p-5 rounded-xl shadow" data-category="forearms arms">
+      <h3 class="text-brandPurple font-semibold mb-2">Forearms Workout</h3>
+      <p class="text-sm text-gray-500 mb-3">Forearms • Grip</p>
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe class="w-full h-full"
+          src="https://www.youtube.com/embed/b1Imw32hgdQ?rel=0"
+          title="Forearms Workout" allowfullscreen></iframe>
+      </div>
+      <p class="text-sm text-gray-600 mt-3">12–15 reps • 3 sets</p>
+    </div>
+
+    <!-- SHOULDERS (FIXED & WORKING) -->
+    <div class="exercise-card bg-white p-5 rounded-xl shadow" data-category="shoulders arms">
+      <h3 class="text-brandPurple font-semibold mb-2">Shoulder Workout</h3>
+      <p class="text-sm text-gray-500 mb-3">Delts • Shoulders</p>
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe class="w-full h-full"
+          src="https://www.youtube.com/embed/lljv06c_FIk?rel=0"
+          title="Shoulder Workout" allowfullscreen></iframe>
+      </div>
+      <p class="text-sm text-gray-600 mt-3">10–12 reps • 3 sets</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FILTER SCRIPT ================= -->
+<script>
+  function filterExercises(category) {
+    document.querySelectorAll('.exercise-card').forEach(card => {
+      const data = card.dataset.category;
+      card.style.display =
+        category === 'all' || data.includes(category) ? 'block' : 'none';
+    });
+  }
+</script>
+
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="testimonials" class="scroll-mt-24 py-20 px-4 bg-gray-100">
+  <h2 class="text-3xl font-bold text-center text-brandPurple mb-4">
+    What Our Clients Say
+  </h2>
+  <p class="text-center text-gray-600 mb-12">
+    Real reviews from real people who transformed their lives
+  </p>
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+
+    <!-- Testimonial 1 -->
+    <div class="bg-white p-6 rounded-2xl shadow text-center">
+      <div class="text-yellow-400 text-lg mb-3">
+        ⭐⭐⭐⭐⭐
+      </div>
+      <p class="text-gray-600 mb-4">
+        “I lost weight and gained confidence. The workouts are simple but very effective.
+        Highly recommended!”
+      </p>
+      <h4 class="font-bold text-brandPurple">Sujal Vyawahare</h4>
+      <p class="text-sm text-gray-500">Weight Loss</p>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="bg-white p-6 rounded-2xl shadow text-center border-2 border-brandPurple">
+      <div class="text-yellow-400 text-lg mb-3">
+        ⭐⭐⭐⭐⭐
+      </div>
+      <p class="text-gray-600 mb-4">
+        “Best guidance I have ever received. My strength and discipline improved a lot.”
+      </p>
+      <h4 class="font-bold text-brandPurple">Tejas Ale</h4>
+      <p class="text-sm text-gray-500">Muscle Gain</p>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="bg-white p-6 rounded-2xl shadow text-center">
+      <div class="text-yellow-400 text-lg mb-3">
+        ⭐⭐⭐⭐☆
+      </div>
+      <p class="text-gray-600 mb-4">
+        “Beginner-friendly workouts and proper motivation. I feel more active and confident now.”
+      </p>
+      <h4 class="font-bold text-brandPurple">Kaveri Chavhan</h4>
+      <p class="text-sm text-gray-500">General Fitness</p>
+    </div>
+
+  </div>
+</section>
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="scroll-mt-24 py-20 px-4 bg-gray-100">
+  <h2 class="text-3xl font-bold text-center text-brandPurple mb-4">
+    Gallery
+  </h2>
+  <p class="text-center text-gray-600 mb-12">
+    Training moments, transformations & gym lifestyle
+  </p>
+
+  <div class="max-w-6xl mx-auto grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+    <!-- Image 1 -->
+    <div class="overflow-hidden rounded-2xl shadow group">
+      <img src="images/gallery1.jpg"
+           alt="Back Workout Session"
+           class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+    </div>
+
+    <!-- Image 2 -->
+    <div class="overflow-hidden rounded-2xl shadow group">
+      <img src="images/gallery2.jpg"
+           alt="Chest Workout Session"
+           class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+    </div>
+
+    <!-- Image 3 -->
+    <div class="overflow-hidden rounded-2xl shadow group">
+      <img src="images/gallery3.jpg"
+           alt="Deadlifting Female Client Training"
+           class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+    </div>
+
+    <!-- Image 4 -->
+    <div class="overflow-hidden rounded-2xl shadow group">
+      <img src="images/gallery4.jpg"
+           alt="Strength Training"
+           class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+    </div>
+
+    <!-- Image 5 -->
+    <div class="overflow-hidden rounded-2xl shadow group">
+      <img src="images/gallery5.jpg"
+           alt="Shoulder Workout"
+           class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+    </div>
+
+    <!-- Image 6 -->
+    <div class="overflow-hidden rounded-2xl shadow group">
+      <img src="images/gallery6.jpg"
+           alt="Fitness Lifestyle"
+           class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="scroll-mt-24 py-20 px-4">
+  <h2 class="text-3xl font-bold text-center text-brandPurple mb-10">
+    Contact Us
+  </h2>
+
+  <form onsubmit="sendWhatsApp(event)"
+    class="max-w-md mx-auto space-y-4 bg-white p-6 rounded-xl shadow">
+    <input id="name" type="text" placeholder="Your Name"
+       class="w-full border p-3 rounded" required>
+
+    <input id="email" type="email" placeholder="Email Address"
+       class="w-full border p-3 rounded" required>
+
+    <textarea id="goal" placeholder="Your Fitness Goal"
+          class="w-full border p-3 rounded"></textarea>
+
+    <button class="w-full bg-brandPurple text-white py-3 rounded font-semibold">
+      Submit
+    </button>
+  </form>
+</section>
+
+<footer class="bg-gray-900 text-gray-300 pt-16 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid gap-10 md:grid-cols-4">
+
+    <!-- BRAND -->
+    <div>
+      <h3 class="text-2xl font-bold text-brandPurple mb-3">
+        Brother<span class="text-white">Fit</span>
+      </h3>
+      <p class="text-sm">
+        Transform your body, build confidence, and live a healthier life with smart training.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#home" class="hover:text-brandPurple">Home</a></li>
+        <li><a href="#about" class="hover:text-brandPurple">About</a></li>
+        <li><a href="#programs" class="hover:text-brandPurple">Programs</a></li>
+        <li><a href="#pricing" class="hover:text-brandPurple">Pricing</a></li>
+        <li><a href="#contact" class="hover:text-brandPurple">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div>
+      <h4 class="font-semibold text-white mb-4">Contact</h4>
+      <ul class="space-y-2 text-sm">
+        <li>📞 +91 8010265880</li>
+        <li>📧 prajwalchavhan089@gmail.com</li>
+        <li>📍 Amravati, Maharashtra, India</li>
+      </ul>
+    </div>
+
+    <!-- SOCIAL LINKS -->
+    <div class="flex justify-center space-x-6 text-brandPurple text-xl">
+
+  <!-- Instagram -->
+  <a href="https://instagram.com/pra_wal26" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram hover:text-pink-600 transition"></i>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://youtube.com/@8bitkaiser_moto" target="_blank" aria-label="YouTube">
+    <i class="fab fa-youtube hover:text-red-600 transition"></i>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://facebook.com/prajwal.chavhan.180" target="_blank" aria-label="Facebook">
+    <i class="fab fa-facebook hover:text-blue-600 transition"></i>
+  </a>
+
+</div>
+
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="border-t border-gray-700 mt-10 pt-4 text-center text-sm">
+    © 2026 BrotherFit. All rights reserved | Designed by Prajwal Chavhan
+  </div>
+</footer>
+
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (menuBtn) {
+    menuBtn.onclick = () => mobileMenu.classList.toggle('hidden');
+  }
+
+  // Exercise filter
+  function filterExercises(category) {
+    document.querySelectorAll('.exercise-card').forEach(card => {
+      const data = card.dataset.category;
+      card.style.display =
+        category === 'all' || data.includes(category)
+          ? 'block'
+          : 'none';
+    });
+  }
+
+  // 🔥 WhatsApp Contact Form
+  function sendWhatsApp(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const goal = document.getElementById("goal").value;
+
+    const message =
+      `Hello BrotherFit 💪\n` +
+      `Name: ${name}\n` +
+      `Email: ${email}\n` +
+      `Goal: ${goal}`;
+
+    const phone = "8010265880"; // ✅ PUT YOUR REAL WHATSAPP NUMBER
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prajwalchavhan22.github.io/fitnessclub-/sitemap.xml
+
