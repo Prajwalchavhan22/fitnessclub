@@ -20,8 +20,8 @@ content="BrotherFit, gym website, fitness expert India, workout exercises, gym t
 <meta property="og:site_name" content="BrotherFit Fitness Club" />
 <meta property="og:description" content="Join BrotherFit by Prajwal Chavhan for expert workouts, exercise videos, fitness programs, and real motivation to build your perfect body." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://prajwalchavhan22.github.io/fitnessclub-/" />
-<meta property="og:image" content="https://prajwalchavhan22.github.io/fitnessclub-/images/og-image.jpg" />
+<meta property="og:url" content="https://prajwalchavhan22.github.io/fitnessclub/" />
+<meta property="og:image" content="https://prajwalchavhan22.github.io/fitnessclub/images/og-image.jpg" />
 
 
 
@@ -47,20 +47,35 @@ content="BrotherFit, gym website, fitness expert India, workout exercises, gym t
 
   <!-- Filter Button Style -->
   <style>
-    .filter-btn {
-      border: 1px solid #6a5acd;
-      color: #6a5acd;
-      padding: 8px 16px;
-      border-radius: 9999px;
-      font-size: 14px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-    .filter-btn:hover {
-      background-color: #6a5acd;
-      color: white;
-    }
-  </style>
+  .filter-btn {
+    border: 1px solid #6a5acd;
+    color: #6a5acd;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  .filter-btn:hover {
+    background-color: #6a5acd;
+    color: white;
+  }
+
+  /* 🔥 DIET BUTTON STYLE */
+  .diet-btn {
+    border: 1px solid #6a5acd;
+    color: #6a5acd;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  .diet-btn:hover {
+    background: #6a5acd;
+    color: white;
+  }
+</style>
+
 </head>
 
 <body class="font-sans bg-white text-gray-900 scroll-smooth">
@@ -78,6 +93,7 @@ content="BrotherFit, gym website, fitness expert India, workout exercises, gym t
   <a href="#trainer" class="hover:text-brandPurple">Trainer</a>
   <a href="#programs" class="hover:text-brandPurple">Programs</a>
   <a href="#pricing" class="hover:text-brandPurple">Pricing</a>
+  <a href="#diet" class="hover:text-brandPurple">Diet</a>
   <a href="#exercises" class="hover:text-brandPurple">Exercises</a>
   <a href="#testimonials" class="hover:text-brandPurple">Testimonials</a>
   <a href="#gallery" class="hover:text-brandPurple">Gallery</a>
@@ -94,6 +110,7 @@ content="BrotherFit, gym website, fitness expert India, workout exercises, gym t
   <a href="#trainer" class="block px-4 py-3">Trainer</a>
   <a href="#programs" class="block px-4 py-3">Programs</a>
   <a href="#pricing" class="block px-4 py-3">Pricing</a>
+  <a href="#diet" class="block px-4 py-3">Diet</a>
   <a href="#exercises" class="block px-4 py-3">Exercises</a>
   <a href="#testimonials" class="block px-4 py-3">Testimonials</a>
   <a href="#gallery" class="block px-4 py-3">Gallery</a>
@@ -276,6 +293,71 @@ content="BrotherFit, gym website, fitness expert India, workout exercises, gym t
       </a>
     </div>
 
+  </div>
+</section>
+<!-- ================= DIET PLANS ================= -->
+<section id="diet" class="scroll-mt-24 py-20 px-4 bg-white">
+  <h2 class="text-3xl font-bold text-center text-brandPurple mb-4">
+    Diet Plans
+  </h2>
+  <p class="text-center text-gray-600 mb-10">
+    Choose a diet plan based on your fitness goal
+  </p>
+
+  <!-- TOGGLE BUTTONS -->
+  <div class="flex justify-center gap-4 mb-12 flex-wrap">
+    <button onclick="filterDiet('beginner')" class="diet-btn">Beginner</button>
+    <button onclick="filterDiet('veg')" class="diet-btn">Veg</button>
+    <button onclick="filterDiet('nonveg')" class="diet-btn">Non-Veg</button>
+  </div>
+
+  <!-- DIET GRID -->
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+
+    <!-- BEGINNER -->
+    <div class="diet-card bg-gray-50 p-6 rounded-2xl shadow" data-diet="beginner">
+      <h3 class="text-xl font-bold text-brandPurple mb-3">Beginner Diet</h3>
+      <ul class="text-sm text-gray-700 space-y-2">
+        <li>🥣 Morning: Oats / Poha</li>
+        <li>🍳 Breakfast: Boiled eggs / sprouts</li>
+        <li>🍛 Lunch: Roti + sabzi + dal</li>
+        <li>☕ Snack: Fruits + nuts</li>
+        <li>🥗 Dinner: Light meal</li>
+      </ul>
+    </div>
+
+    <!-- VEG -->
+    <div class="diet-card bg-gray-50 p-6 rounded-2xl shadow" data-diet="veg">
+      <h3 class="text-xl font-bold text-brandPurple mb-3">Veg Diet</h3>
+      <ul class="text-sm text-gray-700 space-y-2">
+        <li>🥛 Milk + banana</li>
+        <li>🧀 Paneer / tofu</li>
+        <li>🍛 Dal + rice / roti</li>
+        <li>🥜 Nuts & seeds</li>
+        <li>🥗 Salad + curd</li>
+      </ul>
+    </div>
+
+    <!-- NON VEG -->
+    <div class="diet-card bg-gray-50 p-6 rounded-2xl shadow" data-diet="nonveg">
+      <h3 class="text-xl font-bold text-brandPurple mb-3">Non-Veg Diet</h3>
+      <ul class="text-sm text-gray-700 space-y-2">
+        <li>🍳 Eggs (2–4)</li>
+        <li>🍗 Chicken breast</li>
+        <li>🍚 Rice / roti</li>
+        <li>🥛 Milk / curd</li>
+        <li>🥗 Veggies</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="mt-10 text-center">
+    <a href="#contact"
+       class="bg-brandPurple text-white px-8 py-3 rounded-lg font-semibold">
+      Get Personalized Diet Plan
+    </a>
   </div>
 </section>
 
@@ -606,6 +688,15 @@ content="BrotherFit, gym website, fitness expert India, workout exercises, gym t
     menuBtn.onclick = () => mobileMenu.classList.toggle('hidden');
   }
 
+  function filterDiet(type) {
+    document.querySelectorAll('.diet-card').forEach(card => {
+      card.style.display =
+        card.dataset.diet === type ? 'block' : 'none';
+    });
+  }
+
+
+
   // Exercise filter
   function filterExercises(category) {
     document.querySelectorAll('.exercise-card').forEach(card => {
@@ -631,12 +722,12 @@ content="BrotherFit, gym website, fitness expert India, workout exercises, gym t
       `Email: ${email}\n` +
       `Goal: ${goal}`;
 
-    const phone = "8010265880"; // ✅ PUT YOUR REAL WHATSAPP NUMBER
+    const phone = "918010265880"; // ✅ PUT YOUR REAL WHATSAPP NUMBER
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
   }
 </script>
+
 </body>
 </html>
-
